@@ -20,7 +20,7 @@ hideHeader = false
 # Intro on main page, content is markdown
 homeIntroTitle = ''
 homeIntroContent = """
-Hello, My name is **Iraj**, I'm a physicist interested in the organizing principles of life and how they go awry. I am currently postdoc at the [New York Genome Center](https://www.nygenome.org/) primarily in the [Imieliski lab](https://www.mskilab.org), where I research cancer genomes, their structure, dynamics, and evolution. 
+Hello, My name is **Iraj**, I'm a physicist interested in the organizing principles of life and how they go awry. I'm currently a postdoc at the [New York Genome Center](https://www.nygenome.org/) primarily in the [Imieliski lab](https://www.mskilab.org), where I research cancer genomes, their structure, dynamics, and evolution. 
 
 Specifically, I study complex [structural variants](https://www.annualreviews.org/content/journals/10.1146/annurev-genom-120121-101149), large changes in genomic ordering, topology, and copy number which occur in many cancers. These are hard to detect and characterize, so I'm developing computational methods to rigorously study their structure and development using sequencing and conformation capture data (stay tuned for more).
 
