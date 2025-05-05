@@ -1,0 +1,54 @@
+baseURL = 'https://ieshghi.github.io/personal-web/'
+languageCode = 'en-us'
+title = "Iraj Eshghi's Research"
+[module]
+[[module.imports]]
+path = "github.com/tomfran/typo"
+
+
+[taxonomies]
+tag = 'tags'
+
+[params]
+# Meta description
+description = ""
+# Appearance settings
+theme = 'auto'
+colorPalette = 'default'
+hideHeader = false
+
+# Intro on main page, content is markdown
+homeIntroTitle = ''
+homeIntroContent = """
+Hello! My name is **Iraj Eshghi**, I'm a physicist interested in the organizing principles of life and how they go awry. I am currently working as a Postdoctoral Researcher at the [New York Genome Center](https://www.nygenome.org/) primarily in the [Imieliski lab](https://www.mskilab.org), where I research cancer genomes, their structure, dynamics, and evolution. 
+
+Specifically, I study complex [structural variants](https://www.annualreviews.org/content/journals/10.1146/annurev-genom-120121-101149), large changes in genomic ordering, topology, and copy number which occur in many cancers. These are hard to detect and characterize, so I'm developing computational methods to rigorously study their structure and development using sequencing and conformation capture data (stay tuned for more!).
+
+My background is in statistical mechanics, I spent my PhD years at NYU's Center for Soft Matter Research developing theoretical models of chromatin dynamics. I'm always curious to learn about any topics in soft matter physics, statistical mechanics, or genomics. Don't hesitate to reach out to discuss new problems and ideas!
+
+email: ieshghi at nygenome dot org
+
+[Google Scholar](https://scholar.google.com/citations?user=DnLtmq0AAAAJ&hl=en), [Orcid](https://orcid.org/0000-0002-4527-7578), [Github](https://github.com/ieshghi)"""
+
+# Collection to display on home
+homeCollectionTitle = 'selected publications'
+homeCollection = 'pubs'
+
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = '2 Jan 2006'
+
+# Breadcrumbs
+breadcrumbs = true
+
+# Main menu pages
+
+[[params.menu]]
+name = "pubs"
+url = "/pubs"
+
+# Syntax highligth on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
