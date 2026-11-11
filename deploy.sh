@@ -14,17 +14,20 @@ cd public
 
 # If .git exists, reuse it; otherwise initialize
 if [ ! -d .git ]; then
-  git init
-  git remote add origin https://github.com/your-username/your-repo.git
-  git fetch origin gh-pages || echo "No existing gh-pages branch"
-  git checkout -b gh-pages || git checkout gh-pages
+  git init -q
+  git remote add origin git@github.com:ieshghi/ieshghi.github.io.git
+  git fetch origin gh-pages
+  # Attach the fresh build to the existing gh-pages history (keeps the built files in the working tree)
+  git checkout -q -b gh-pages
+  git reset -q origin/gh-pages
 else
   git checkout gh-pages
-  git pull origin gh-pages
+  git fetch origin gh-pages
+  git reset -q origin/gh-pages
 fi
 
-# Add and commit changes
-git add .
+# Add and commit changes (-A also records files removed from the build)
+git add -A
 git commit -m "Deploy site" || echo "No changes to commit"
-git push -f origin gh-pages
+git push origin gh-pages
 cd ..
