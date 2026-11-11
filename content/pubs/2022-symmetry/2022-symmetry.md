@@ -7,4 +7,4 @@ math: true
 hideBackToTop: false
 ---
 
-Full text [here](2022-symmetry.pdf)
+Full text [here](https://par.nsf.gov/servlets/purl/10377012)
